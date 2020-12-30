@@ -118,8 +118,8 @@ void initTime()
 
 void readMessage(int messageId, char *payload)
 {
-    float temperature = random(30.,40);
-    float humidity = random(20.,30);
+    float temperature = random(40.,50);
+    float humidity = random(10.,20);
     StaticJsonBuffer<MESSAGE_MAX_LEN> jsonBuffer;
     JsonObject &root = jsonBuffer.createObject();
     root["deviceId"] = DEVICE_ID;
